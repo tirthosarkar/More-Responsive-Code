@@ -37,3 +37,16 @@
                 "navbar main main advertisement"
                 "footer footer footer footer";
         }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-areas:
+                    "header"
+                    "navbar"
+                    "main"
+                    "sidebar"
+                    "advertisement"
+                    "footer";
+            }
+        }
+
