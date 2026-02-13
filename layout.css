@@ -1,0 +1,39 @@
+.container>* {
+            border: 3px solid gold;
+            background-color: lightseagreen;
+            padding: 30px;
+        }
+
+        header{
+            grid-area: header;
+        }
+
+        nav{
+            grid-area: navbar;
+        }  
+
+        main{
+            grid-area: main;
+        }
+
+        #sidebar{
+            grid-area: sidebar;
+        }
+
+        #advertisement{
+            grid-area: advertisement;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+                "header header header header"
+                "navbar main main sidebar"
+                "navbar main main advertisement"
+                "footer footer footer footer";
+        }
